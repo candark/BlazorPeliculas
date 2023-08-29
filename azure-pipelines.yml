@@ -20,7 +20,7 @@ steps:
 - task: CmdLine@2
   displayName: 'Instalando EF Core CLI'
   inputs:
-    script: 'dotnet install --global dotnet-ef'
+    script: 'dotnet tool install --global dotnet-ef'
 
 - task: CmdLine@2
   displayName: 'Generando el script de las migraciones'
