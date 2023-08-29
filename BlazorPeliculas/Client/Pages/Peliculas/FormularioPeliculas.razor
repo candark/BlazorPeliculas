@@ -87,10 +87,6 @@
     private List<SelectorMultipleModel> NoSeleccionados { get; set; } = new List<SelectorMultipleModel>();
     string? imagenURL;
 
-    protected override void OnParametersSet()
-    {
-        Console.WriteLine($"Hola : {NoSeleccionados.Count()}");
-    }
     protected override void OnInitialized()
     {
         if (!string.IsNullOrEmpty(Pelicula.Poster))
@@ -98,8 +94,6 @@
             imagenURL = Pelicula.Poster;
             Pelicula.Poster = null;
         }
-
-        Console.WriteLine($"Hola : {NoSeleccionados.Count()}");
 
         Seleccionados = GenerosSeleccionados.Select(x => new SelectorMultipleModel(x.Id.ToString(), x.Nombre)).ToList();
 

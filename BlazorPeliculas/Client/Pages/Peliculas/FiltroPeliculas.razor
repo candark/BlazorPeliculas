@@ -123,11 +123,6 @@
         {
             Peliculas = respuestaHTTP.Response;
         }
-        else
-        {
-            Console.WriteLine("api/peliculas/filtrar?" + queryStrings);
-            Console.WriteLine($"Peliculas :  { Peliculas?.Count } ");
-        }
 
     }
     private string GenerarQueryStrings()
