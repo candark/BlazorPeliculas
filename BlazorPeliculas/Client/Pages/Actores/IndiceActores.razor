@@ -62,6 +62,7 @@
         var respuestaHTTP = await repositorio.Get<List<Actor>>($"api/actores?pagina={pagina}");
         Actores = respuestaHTTP.Response!;
         paginasTotales = int.Parse(respuestaHTTP.HttpResponseMessage.Headers.GetValues("totalPaginas").FirstOrDefault()!);
+        StateHasChanged();
     }
     private async Task Borrar(Actor actor)
     {

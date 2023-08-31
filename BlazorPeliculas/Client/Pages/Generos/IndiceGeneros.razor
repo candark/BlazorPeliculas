@@ -50,6 +50,7 @@
     {
         var respuestaHTTP = await repositorio.Get<List<Genero>>("api/generos");
         Generos = respuestaHTTP.Response!;
+        StateHasChanged();
     }
 
     private async Task Borrar(Genero genero)

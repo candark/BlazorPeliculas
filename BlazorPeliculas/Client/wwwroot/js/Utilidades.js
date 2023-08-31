@@ -18,7 +18,7 @@ function timerInactivo(dotnetHelper) {
 
 	function resetTimer() {
 		clearTimeout(timer);
-		timer = setTimeout(logout, 300*1000) // 5 minutos
+		//timer = setTimeout(logout, 300*1000) // 5 minutos
 	}
 
 	function logout() {

@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "identityapp1": {
+      "ignored": "true",
+      "type": "identityapp"
+    },
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/BlazorPeliculasServer20230829214553/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsDefaulConnection_611093AFF5",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/blazorpeliculasserverdbserver/databases/BlazorPeliculas.Server_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:DefaulConnection"
+    }
+  }
+}

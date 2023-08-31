@@ -113,7 +113,7 @@ namespace BlazorPeliculas.Server.Controllers
             {
                 Nombre = pa.Actor!.Nombre,
                 Foto = pa.Actor.Foto,
-                Personaje = pa.Actor.Personaje,
+                Personaje = pa.Personaje, // <-- Forma correcta
                 Id = pa.ActorId
             }).ToList();
 

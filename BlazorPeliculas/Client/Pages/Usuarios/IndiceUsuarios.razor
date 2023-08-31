@@ -62,6 +62,6 @@
             paginasTotales = int.Parse(respuestaHTTP.HttpResponseMessage.Headers.GetValues("totalPaginas").FirstOrDefault()!);
             Usuarios = respuestaHTTP.Response;
         }
-
+        StateHasChanged();
     }
 }
