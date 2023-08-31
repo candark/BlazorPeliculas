@@ -10,7 +10,7 @@ namespace BlazorPeliculas.Shared.DTO
     {
         public int Pagina { get; set; } = 1;
 
-        public int CantidadRegistros { get; set; } = 2;
+        public int CantidadRegistros { get; set; } = 10;
 
     }
 }
