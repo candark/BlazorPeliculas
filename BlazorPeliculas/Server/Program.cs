@@ -27,6 +27,8 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<AplicationDbContext>()
     .AddDefaultTokenProviders();
 
+builder.Services.AddTransient<IAlmacenadorArchivos, AlmacenadorArchivosAzureStorage>();
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
         options.TokenValidationParameters = new TokenValidationParameters
